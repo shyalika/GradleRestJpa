@@ -12,7 +12,7 @@ public class HelloWorldApplication extends Application {
     private Set<Class<?>> singletons = new HashSet<>();
 
     public HelloWorldApplication() {
-        singletons.add(EmployeeService.class);
+        singletons.add(EmployeeResource.class);
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.shyali.jpa.entity;
+package com.shyali.rest.entity;
 
 import javax.persistence.Basic;
 import javax.persistence.Column;
@@ -17,7 +17,8 @@ import javax.persistence.Table;
 @NamedQueries({
     @NamedQuery(
             name = "Employee.findByName",
-            query = "SELECT e FROM Employee e WHERE e.firstName = :firstName")
+            query = "SELECT e FROM Employee e WHERE e.firstName = :firstName"),
+    @NamedQuery(name = "Employee.findAll", query = "SELECT e FROM Employee e")
 })
 public class Employee {
 
